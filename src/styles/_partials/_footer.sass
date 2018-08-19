@@ -1,0 +1,29 @@
+footer
+	background: darken($info, 5%)
+	padding: 1rem 0
+	ul
+
+		text-align: center
+		li
+			padding: .5rem
+			a
+				color: #fff
+				font-size: 1.2rem
+				font-weight: 600	
+				&:hover
+					color: $sun-flower
+					text-decoration: none
+	
+	+media-breakpoint-up(md)
+		ul
+			justify-content: space-between
+			display: flex
+			li
+				padding: 0 2rem
+	+media-breakpoint-up(lg)
+		ul
+			li
+				padding: 0 3rem
+				a
+					font-size: 1.71rem
+

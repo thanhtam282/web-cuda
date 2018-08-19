@@ -1,0 +1,232 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.home_slider
+		.container
+			.row.big_button
+				.col
+					h1 Hi There! We are new kids on the block and we build awesome websites and mobile apps.
+					p
+						a.btn.btn-more(href="#") WORK WITH US
+	section.home_service
+		.container
+			.row.caption
+				.col.text-center
+					h2 SERVICES WE PROVIDE
+					p We are working with both individuals and businesses from all over globe to create awesome websites and applications.
+			.row.service_icon
+				.col-sm-6.col-md-3
+					img.img-fluid(src="./img/home_icon_1.png", alt="")
+					h3 branding
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+				.col-sm-6.col-md-3
+					img.img-fluid(src="./img/home_icon_2.png", alt="")
+					h3 design
+					p Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+				.col-sm-6.col-md-3
+					img.img-fluid(src="./img/home_icon_3.png", alt="")
+					h3 development
+					p Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+				.col-sm-6.col-md-3
+					img.img-fluid(src="./img/home_icon_4.png", alt="")
+					h3 rocket science
+					p Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+	section.home_slider_team
+		.container
+			.row.caption
+				.col.text-center
+					h2 MEET OUR BEAUTIFUL TEAM
+					p 
+					| We are small team of designers and developers, who help brands with big ideas.
+					br
+					| to create awesome websites and applications.
+			.row
+				.col-sm-6.col-md-3.item
+					img.img-fluid(src="./img/home_avatar_1.png", alt="")
+					h1 David Beckham
+					a(href="#") President 
+					p asdf ssfs dfdf df ewrd asdf asdf asfdsadf asdfsadf asdfsdf asdfdf sdfasdf asdfasd  asdf asdf asdfasdf asdf
+					ul.list-inline
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-facebook
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-google
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-twitter
+				.col-sm-6.col-md-3.item
+					img.img-fluid(src="./img/home_avatar_1.png", alt="")
+					h1 David Beckham
+					a(href="#") President 
+					p asdf ssfs dfdf df ewrd asdf asdf asfdsadf asdfsadf asdfsdf asdfdf sdfasdf asdfasd  asdf asdf asdfasdf asdf
+					ul.list-inline
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-facebook
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-google
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-twitter
+				.col-sm-6.col-md-3.item
+					img.img-fluid(src="./img/home_avatar_1.png", alt="")
+					h1 David Beckham
+					a(href="#") President 
+					p asdf ssfs dfdf df ewrd asdf asdf asfdsadf asdfsadf asdfsdf asdfdf sdfasdf asdfasd  asdf asdf asdfasdf asdf
+					ul.list-inline
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-facebook
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-google
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-twitter
+				.col-sm-6.col-md-3.item
+					img.img-fluid(src="./img/home_avatar_1.png", alt="")
+					h1 David Beckham
+					a(href="#") President 
+					p asdf ssfs dfdf df ewrd asdf asdf asfdsadf asdfsadf asdfsdf asdfdf sdfasdf asdfasd  asdf asdf asdfasdf asdf
+					ul.list-inline
+						li.list-inline-item 			
+							a(href="#")
+								i.fa.fa-facebook
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-google
+						li.list-inline-item
+							a(href="#")
+								i.fa.fa-twitter
+	section.home_skill
+		.container
+			.row.caption
+				.col.text-center
+					h2 WE GOT SKILLS!
+					p 
+					| Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+					br
+					| Facilis cupiditate sapiente nemo doloribus ipsam reiciendis maiores
+			.row.mt-5
+				-for(x = 1;x < 5;x++)
+					.col-sm-6.col-md-3
+						-if(x==1)
+							.progress-circle.progress-90
+								span 90%
+							h3 WEB DESIGN
+						-if(x==2)
+							.progress-circle.progress-75
+								span 75%
+							h3 HTML / CSS
+						-if(x==3)
+							.progress-circle.progress-70
+								span 70%
+							h3 GRAPHIC DESIGN
+						-if(x==4)
+							.progress-circle.progress-85
+								span 85%
+							h3 UI / UX
+	section.home_portfolio
+		.container
+			.row.caption
+				.col.text-center
+					h2 OUR PORTFOLIO!
+					p 
+					| Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+					br
+					| Facilis cupiditate sapiente nemo doloribus ipsam reiciendis 
+			.row.button
+				.col.text-center
+					ul.list-inline
+						li.list-inline-item
+							a.btn(href="#") ALL
+						li.list-inline-item
+							a.btn(href="#") WEB
+						li.list-inline-item
+							a.btn(href="#") APPS
+						li.list-inline-item
+							a.btn(href="#") ICONS
+			.row.laptop
+				.col-sm-6.col-md-6.text-center
+					img.img-fluid(src="./img/home_laptop_1.png", alt="")
+					p isometric perspective mock-up
+				.col-sm-6.col-md-6.text-center
+					img.img-fluid(src="./img/home_laptop_2.png", alt="")
+					p time zone app ui
+				.col-sm-6.col-md-6.text-center
+					img.img-fluid(src="./img/home_laptop_3.png", alt="")
+					p viro media players ui
+				.col-sm-6.col-md-6.text-center
+					img.img-fluid(src="./img/home_laptop_4.png", alt="")
+					p blog/magazine flat ui kit
+			.row.big_button
+				.col.text-center
+					p
+						a.btn.btn-more(href="#") LOAD MORE PROJECTS
+	section.home_feedback
+		.container
+			.row.caption
+				.col.text-center
+					h2 WHAT PEOPLE SAY ABOUT US
+					p Our cliens love us!
+			.row
+				.col-sm-6.col-md-6
+					.media
+						img.img-fluid(src="./img/home_laptop_4.png", alt="")
+						.media-body
+							p "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus exsd sdfdsfg sdfgdsfgdfs sdfg sdfg sdfg sdfg dfsg" 
+							h3 BAO NGUYEN
+							h4 Founder of fullstack vietnam
+				.col-sm-6.col-md-6
+					.media
+						img.img-fluid(src="./img/home_laptop_4.png", alt="")
+						.media-body
+							p "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus exsd sdfdsfg sdfgdsfgdfs sdfg sdfg sdfg sdfg dfsg" 
+							h3 BAO NGUYEN
+							h4 Founder of fullstack vietnam
+				.col-sm-6.col-md-6
+					.media
+						img.img-fluid(src="./img/home_laptop_4.png", alt="")
+						.media-body
+							p "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus exsd sdfdsfg sdfgdsfgdfs sdfg sdfg sdfg sdfg dfsg" 
+							h3 BAO NGUYEN
+							h4 Founder of fullstack vietnam
+				.col-sm-6.col-md-6
+					.media
+						img.img-fluid(src="./img/home_laptop_4.png", alt="")
+						.media-body
+							p "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus exsd sdfdsfg sdfgdsfgdfs sdfg sdfg sdfg sdfg dfsg" 
+							h3 BAO NGUYEN
+							h4 Founder of fullstack vietnam
+	section.home_form
+		.container
+			.row.caption
+				.col.text-center
+					h2 GET IN TOUCH
+					p 135 W. 50th Street New York, NY 10020
+			.row
+				.col-sm-6.col-md-6.form-bot
+					form
+						.form-group
+							input.form-control(type="email" aria-describedby="emailHelp" placeholder="Your Email")
+				.col-sm-6.col-md-6
+					form
+						.form-group
+							input.form-control(type="email" aria-describedby="emailHelp" placeholder="Your Name")
+			.row
+				.col.form-bot
+					form
+						.form-group
+							textarea.form-control(rows="7" placeholder="Your message" )
+			.row.big_button
+				.col.text-center
+					P
+						a.btn.btn-more(href="#") SEND MESSAGE

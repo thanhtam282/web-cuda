@@ -1,0 +1,334 @@
+$tim: #87509c //Tím 
+$ngoc: #17c2a4 // Cyan
+$vang: #ffdd99 // Vang 
+$do: #d74680 // Đỏ 
+$xanh: #3c5499 // Xanh
+$cam: #ec7d4b // Cam
+$team: #27283d //Màu của section  thành viên
+
+
+@keyframes bounce 
+	0%, 20%, 60%, 100% 
+		-webkit-transform: translateY(0)
+		transform: translateY(0)
+	
+	40% 
+		-webkit-transform: translateY(-20px)
+		transform: translateY(-20px)
+	
+	80% 
+		-webkit-transform: translateY(-10px)
+		transform: translateY(-10px)
+	
+
+=trangchu($bg-color: #fff, $mag-top: 20px)
+	text-align: center
+	align-items: center
+	justify-content: center
+	margin: $mag-top auto 0 auto
+	background: $bg-color
+	color: #FFF
+	min-width: 19rem
+	min-height: 3rem
+	line-height: 3rem
+	font-size: 1.2rem
+	border: none
+	box-shadow: 0px 6px 0px darken($bg-color,20%)
+	&:hover,
+	&:active
+		animation: bounce .5s
+		color: #fff
+		background: darken($bg-color, 10%)
+	+media-breakpoint-down(sm)
+		min-width: 16rem
+		min-height: 2rem
+		line-height: 2rem
+		font-size: 1rem
+
+		
+.caption
+	h2
+		letter-spacing: 3px
+		font-weight: 900
+		font-size: 2.3rem
+		margin-top: 50px
+		position: relative
+		padding: 4rem 0rem 1rem 0rem
+		&::before
+			content: ""
+			position: absolute
+			display: block
+			background: grey
+			width: 8%
+			height: 4px
+			bottom: 0px
+			left: 46%
+			opacity: .4
+	p
+		font-size: 1.1rem
+		margin-top: 20px
+		padding: 0 6rem
+	+media-breakpoint-down(sm)
+		h2
+			margin: 20px 0
+
+.home_slider
+	background: $tim
+	color: #fff
+	display: flex
+	letter-spacing: 1px
+	text-align: center
+	align-items: center
+	.big_button
+		h1
+			padding-top: 4rem
+		.btn-more
+			+trangchu($cam)
+	
+
+.home_service
+	background: $ngoc
+	color: #fff
+	min-height: 368px
+	display: flex
+	letter-spacing: 1px
+	justify-content: center
+	text-align: center      
+	align-items: center
+
+	.service_icon
+		img
+			padding: 41px
+		h3
+			text-transform: uppercase
+			font-weight: bold
+			font-size: 1.3rem
+		p
+			justify-content: center
+			text-align: center      
+			align-items: center
+			padding: 1px 40px 70px 40px
+			margin-bottom: 30px
+	
+.home_slider_team
+	background: $border
+	min-height: 168px
+	display: flex
+	justify-content: center
+	text-align: center
+	align-items: center
+	padding: 2rem 0
+	.caption
+		color: lighten(#000, 10%)
+		h2
+			padding-top: 0rem
+		
+
+	img
+		padding: 2rem
+		border-radius: 50%
+		transition: .5s all ease-in-out
+		&:hover,
+		&:active
+			-ms-transform: scale(1.3) 
+			-webkit-transform: scale(1.3) 
+			transform: scale(1.3)
+	+media-breakpoint-down(sm)
+		img
+			&:hover,
+			&:active
+				-ms-transform: scale(1.2) 
+				-webkit-transform: scale(1.2) 
+				transform: scale(1.2)
+
+
+	p
+		padding: 0 .5rem
+	ul
+		li
+			a
+				height: 2rem
+				line-height: 2rem
+				width: 2rem
+				display: block
+				background: #FFF
+				border-radius: 50%
+				transition: .5s all ease-in-out
+			&:hover,
+			&:active
+				a
+					background: #000
+					color: #fff
+			&:active
+				a
+					background: #000
+		padding-bottom: 2rem
+	//asdfsadf
+	+media-breakpoint-down(sm)
+		padding: 3rem 0
+		.item
+			&:last-child
+				margin-bottom: 0
+
+.home_skill
+	background: lighten($clouds, 20%)
+	min-height: 168px
+	display: flex
+	justify-content: center
+	text-align: center
+	align-items: center
+	padding-top: 2rem
+	padding-bottom: 4rem
+	h2
+		padding-top: 0rem
+	h3
+		font-weight: bold
+	.progress-circle
+		position: relative
+		display: inline-block
+		margin: 1rem
+		width: 140px
+		height: 140px
+		border-radius: 50%
+		background-color: #ebebeb
+		&:after
+			content: ''
+			display: inline-block
+			width: 100%
+			height: 100%
+			border-radius: 50%
+			-webkit-animation: colorload 2s
+			animation: colorload 2s
+		span
+			font-size: 2.5rem
+			//font-weight: bold
+			color: #8b8b8b
+			position: absolute
+			left: 50%
+			top: 50%
+			display: block
+			width: 120px
+			height: 120px
+			line-height: 120px
+			margin-left: -60px
+			margin-top: -60px
+			text-align: center
+			border-radius: 50%
+			background: #fff
+			z-index: 1
+	.progress-90
+		&:after
+			background-image: linear-gradient(54deg, $peter-river 50%, transparent 50%, transparent), linear-gradient(270deg, $peter-river 50%, $basic 50%, $basic)
+	.progress-75
+		&:after
+			background-image: linear-gradient(0deg, #fc3154 50%, transparent 50%, transparent), linear-gradient(270deg, #fc3154 50%, #ebebeb 50%, #ebebeb)
+	.progress-70
+		&:after
+			background-image: linear-gradient(-18deg, #15c7a8 50%, transparent 50%, transparent), linear-gradient(270deg, #15c7a8 50%, #ebebeb 50%, #ebebeb)
+	.progress-85
+		&:after
+			background-image: linear-gradient(36deg, #eb7d4b 50%, transparent 50%, transparent), linear-gradient(270deg, #eb7d4b 50%, #ebebeb 50%, #ebebeb)
+
+.home_portfolio
+	background: lighten($sun-flower,30%)
+	padding: 1rem 0
+	ul
+		margin: 1rem
+		li
+			a
+				display: inline-block
+				transition: .5s all ease-in-out
+				color: $black
+				background: $sun-flower
+				font-size: 1rem
+				width: 5rem
+				padding: .5rem 1rem
+				margin: .5rem 
+				text-decoration-line: none
+				&:hover,
+				&:active
+					background: lighten($sun-flower,50)
+					box-shadow: -1px 3px 0px lighten($sun-flower,30%)
+		
+	.laptop
+		padding-top: 2rem
+		p
+			text-transform: uppercase
+			padding: 1rem 0 2rem 0
+.big_button
+	padding-bottom: 4rem
+	.btn-more
+		+trangchu(#2dc2a4)
+		
+	+media-breakpoint-down(xs)
+		.laptop
+			display: block
+			padding: 2rem 0
+			.button
+				&:first-child
+					padding-top: 1rem
+				&:last-child
+					padding-bottom: 1rem
+		.button
+			display: block
+			ul
+				margin: .5rem
+
+.home_feedback
+	background: #d74680
+	color: #fff
+	.media
+		padding: 2rem 0
+		.media-body
+			padding: 0 2rem
+			p
+				font-style: italic
+			h3
+				font-weight: bold
+				font-size: 1.5rem
+			h4
+				color: $sun-flower
+				font-size: 1.3rem
+				margin-bottom: 40px
+		img
+			max-width: 150px
+			
+	+media-breakpoint-down(md)
+		.media
+			display: block
+			text-align: center
+			img
+				width: 100%
+			p
+				padding-top: 1rem
+
+.home_form
+	background: #3c5498
+	color: white
+
+	h2
+		&::before
+				background: darken(#3c5498,20%)
+	p
+		padding-bottom: 2rem
+	.form-control
+		border: none
+		background: darken(#3c5498, 15%)
+		color: lighten(#3c5498, 15%)
+	.btn-more
+		+trangchu(#30bbe7, 60px)
+	.row
+		margin: 0 4rem
+		textarea
+			color: white
+			&:hover,
+			&:active
+				background: lighten(#3c5498, 25%)
+		input
+			color: white
+			&:hover,
+			&:active
+				background: lighten(#3c5498, 25%)
+		//placeholder 
+		::-webkit-input-placeholder
+			color: white
