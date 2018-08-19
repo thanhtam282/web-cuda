@@ -21,11 +21,11 @@ $team: #27283d //Màu của section  thành viên
 		transform: translateY(-10px)
 	
 
-=trangchu($bg-color: #fff, $mag-top: 20px)
+=trangchu($bg-color: #fff, $mag-top: 20px, $mag-bot: 0)
 	text-align: center
 	align-items: center
 	justify-content: center
-	margin: $mag-top auto 0 auto
+	margin: $mag-top auto $mag-bot auto
 	background: $bg-color
 	color: #FFF
 	min-width: 19rem
@@ -83,7 +83,7 @@ $team: #27283d //Màu của section  thành viên
 		h1
 			padding-top: 4rem
 		.btn-more
-			+trangchu($cam)
+			+trangchu($cam, 20px, 2rem)
 	
 
 .home_service
