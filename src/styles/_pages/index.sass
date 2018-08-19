@@ -109,6 +109,21 @@ $team: #27283d //Màu của section  thành viên
 			align-items: center
 			padding: 1px 40px 70px 40px
 			margin-bottom: 30px
+	+media-breakpoint-down(md)
+		.service_icon
+			img
+				padding: 20px
+				padding-bottom: 10px
+			p
+				margin-bottom: 0
+	+media-breakpoint-down(sm)
+		.service_icon
+			img
+				padding: 30px
+				padding-bottom: 10px
+			p
+				padding: 1px 40px 20px 40px
+				margin-bottom: 0
 	
 .home_slider_team
 	background: $border
@@ -228,6 +243,9 @@ $team: #27283d //Màu của section  thành viên
 	.progress-85
 		&:after
 			background-image: linear-gradient(36deg, #eb7d4b 50%, transparent 50%, transparent), linear-gradient(270deg, #eb7d4b 50%, #ebebeb 50%, #ebebeb)
+	+media-breakpoint-down(sm)
+		.skill
+			padding: 1.5rem 0
 
 .home_portfolio
 	background: lighten($sun-flower,30%)
@@ -307,10 +325,11 @@ $team: #27283d //Màu của section  thành viên
 	color: white
 
 	h2
+		text-align: center
 		&::before
-				background: darken(#3c5498,20%)
+			background: darken(#3c5498,20%)
 	p
-		padding-bottom: 2rem
+		text-align: center
 	.form-control
 		border: none
 		background: darken(#3c5498, 15%)
@@ -332,3 +351,6 @@ $team: #27283d //Màu của section  thành viên
 		//placeholder 
 		::-webkit-input-placeholder
 			color: white
+	+media-breakpoint-down(sm)
+		.mail-name
+			margin-top: 2rem
